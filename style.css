@@ -1,0 +1,62 @@
+
+:root {
+    --body-background-color: hsl(212, 45%, 89%);
+    --body-H1-color: hsl(218, 44%, 22%);
+    --body-h1-font-size:22px;
+    --body-p-color: hsl(216, 15%, 48%);
+    --body-p-font-size:15px;
+    --wrapper-max-width:320px;
+    --wrapper-border-radius:20px;
+    --wrapper-padding:16px;
+    --img-border-radius: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    font-weight: 400; /* Regular */
+    min-height: 100vh; /* to make elements centered veritcally and horizontally*/
+    background-color: var(--body-background-color);
+}
+
+.wrapper{
+    padding: var(--wrapper-padding) var(--wrapper-padding) 40px;
+    background-color:white ;
+    border-radius: var(--wrapper-border-radius);
+    max-width: var(--wrapper-max-width);
+    text-align: center;
+}
+
+.wrapper img{
+    border-radius: var(--img-border-radius);
+    width: 100%;
+    height: auto;
+}
+
+.wrapper h1{
+    margin: 24px 16px 16px;
+    font-weight: 700;
+    font-size: var(--body-h1-font-size);
+    color: var(--body-H1-color); 
+}
+
+.wrapper p{
+     margin: 0 16px;
+     font-size: var(--body-p-font-size);
+     color: var(--body-p-color);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
